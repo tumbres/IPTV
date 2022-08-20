@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MPD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xmlns="urn:mpeg:dash:schema:mpd:2011"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:cenc="urn:mpeg:cenc:2013"
+     xsi:schemaLocation="urn:mpeg:DASH:schema:MPD:2011 http://standards.iso.org/ittf/PubliclyAvailableStandards/MPEG-DASH_schema_files/DASH-MPD.xsd"
+     profiles="urn:mpeg:dash:profile:isoff-live:2011"
+     type="dynamic"
+     minimumUpdatePeriod="PT2.612S" 
+     publishTime="2022-08-20T14:42:23.118Z" 
+     availabilityStartTime="2022-07-05T16:55:25.687Z" 
+     timeShiftBufferDepth="PT24.0S"
+     suggestedPresentationDelay="PT10.0S" 
+     minBufferTime="PT6.0S">
+<ProgramInformation>
+    <Title>indosiar.smil</Title>
+</ProgramInformation>
+<Location>https://cdn13jtedge.useetv.com/dass/133/indosiar/manifest_wuseetv.mpd?encp=4lBD4q3h-LBLZKrMaV2lEQ&amp;uid=&amp;expp=1661017344</Location>
+<Period id="0" start="PT0.0S">
+    <AdaptationSet id="0" group="1" mimeType="video/mp4" maxWidth="640" maxHeight="360" par="16:9" maxFrameRate="25" segmentAlignment="true" startWithSAP="1" subsegmentAlignment="true" subsegmentStartsWithSAP="1">
+        <ContentProtection schemeIdUri="urn:mpeg:dash:mp4protection:2011" value="cenc" cenc:default_KID="696e646f-7369-6172-3030-303030303030"/>
+        <ContentProtection schemeIdUri="urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed" value="Widevine">
+            <cenc:pssh>AAAAV3Bzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAADcSEGluZG9zaWFyMDAwMDAwMDAaI2tvZGVhcGxpa2FzaWluZG9uZXNpYXRlbGVrb211bmlrYXNp</cenc:pssh>
+        </ContentProtection>
+        <SegmentTemplate timescale="90000" media="segment_ctvideo_cfm4s_rid$RepresentationID$_cs$Time$_w_useetv_mpd.m4s" initialization="segment_ctvideo_cfm4s_rid$RepresentationID$_cinit_w_useetv_mpd.m4s">
+            <SegmentTimeline>
+                <S t="356975207100" d="360000"/>
+                <S d="540000"/>
+                <S d="360000"/>
+                <S d="540000"/>
+                <S d="360000"/>
+            </SegmentTimeline>
+        </SegmentTemplate>
+        <Representation id="p0va0br320000" codecs="avc1.428029" width="240" height="180" frameRate="15" sar="1:1" bandwidth="320000" />
+        <Representation id="p0va0br480000" codecs="avc1.428029" width="480" height="270" frameRate="20" sar="1:1" bandwidth="480000" />
+        <Representation id="p0va0br640000" codecs="avc1.428029" width="640" height="360" frameRate="25" sar="1:1" bandwidth="640000" />
+    </AdaptationSet>
+    <AdaptationSet id="1" group="2" mimeType="audio/mp4" lang="eng" segmentAlignment="true" startWithSAP="1" subsegmentAlignment="true" subsegmentStartsWithSAP="1">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="1"/>
+        <ContentProtection schemeIdUri="urn:mpeg:dash:mp4protection:2011" value="cenc" cenc:default_KID="696e646f-7369-6172-3030-303030303030"/>
+        <ContentProtection schemeIdUri="urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed" value="Widevine">
+            <cenc:pssh>AAAAV3Bzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAADcSEGluZG9zaWFyMDAwMDAwMDAaI2tvZGVhcGxpa2FzaWluZG9uZXNpYXRlbGVrb211bmlrYXNp</cenc:pssh>
+        </ContentProtection>
+        <SegmentTemplate timescale="24000" media="segment_ctaudio_cfm4s_rid$RepresentationID$_cs$Time$_w_useetv_mpd.m4s" initialization="segment_ctaudio_cfm4s_rid$RepresentationID$_cinit_w_useetv_mpd.m4s">
+            <SegmentTimeline>
+                <S t="95193388584" d="96264"/>
+                <S d="144384"/>
+                <S d="96264"/>
+                <S d="143352"/>
+                <S d="96264"/>
+            </SegmentTimeline>
+        </SegmentTemplate>
+        <Representation id="p0aa0br44100" codecs="mp4a.40.2" audioSamplingRate="24000" bandwidth="44100">
+        </Representation>
+    </AdaptationSet>
+</Period>
+<UTCTiming schemeIdUri="urn:mpeg:dash:utc:direct:2014" value="2022-08-20T14:42:23.118Z"/>
+</MPD>
